@@ -1,7 +1,7 @@
 pipeline {
   environment {
-    registry = "<your-docker-hub-id>/my-cicd-app"
-    registryCredential = 'dockerhub'
+    registry = "ccie13964/my-cicd-app"
+    registryCredential = 'ccieCCIE13946'
     dockerImage = ''
   }
   agent { 
@@ -33,7 +33,7 @@ pipeline {
     }
     // Uncomment for SAST lab step 
     // Commented section starts
-    /*
+  
     stage('SAS Test') {
       steps {
         snykSecurity(
@@ -43,7 +43,7 @@ pipeline {
           failOnIssues: true)
       }
     }
-    */
+    
     // Commented section ends 
     stage('Build image') {
       steps{
