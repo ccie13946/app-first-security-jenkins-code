@@ -16,6 +16,7 @@ pipeline {
     dockerfile true
   }
   */
+  agent any
   stages {
     stage('Build App') {
       steps {
