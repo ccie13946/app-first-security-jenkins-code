@@ -11,10 +11,11 @@ pipeline {
       args '-p 5000:5000'
         } 
   }
-  */
+  
   agent {
     dockerfile true
   }
+  */
   stages {
     stage('Build App') {
       steps {
